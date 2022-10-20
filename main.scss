@@ -1,4 +1,8 @@
 @import "./variables";
+@import "./header";
+@import "./home";
+@import "./skills";
+@import "./footer.scss";
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -7,9 +11,17 @@
 html:root {
   background-color: #f2e9e4;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
-  margin: 3rem;
+  margin: 0;
   font-size: 1rem;
+}
+
+.only-main {
+  overflow-x: hidden;
 }
 
 .bd-grid {
@@ -70,129 +82,4 @@ body {
   .home {
     padding: 4rem 0 2rem;
   }
-}
-
-.main-header {
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  background-color: #fff;
-  top: 0;
-  left: 0;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-
-  .nav {
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    // margin-inline: 2em;
-  }
-  .nav-list {
-    display: flex;
-    padding-top: 0;
-    gap: 1em;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .nav-logo {
-    color: #023047;
-  }
-
-  .nav-link {
-    color: #023047;
-  }
-}
-
-.active:hover {
-  padding-bottom: 0.75em;
-  border-bottom: 2px solid #2a9d8f;
-}
-.active:active {
-  border-bottom: 2px solid #e9c46a;
-}
-a {
-  text-decoration: none;
-}
-/* Home Styles */
-.home {
-  position: relative;
-  row-gap: 5rem;
-  padding: 4rem 0 5rem;
-}
-.home-title {
-  font-size: 3.5rem;
-  margin-bottom: 3rem;
-  gap: 1rem;
-  margin-top: 5rem;
-}
-
-.name-color {
-  color: $button-color;
-}
-
-.button {
-  display: inline-block;
-  color: #fff;
-  padding: 0.75rem 2.5rem;
-  border-radius: 0.5rem;
-  background-color: $button-color;
-  transition: 0.3s;
-}
-
-.section {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
-
-.section-title {
-  position: relative;
-  font-size: 2rem;
-  color: $button-color;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-// Skills styles
-.skills-container {
-  row-gap: 2rem;
-  text-align: center;
-  max-width: 1400px;
-  padding: 0 15px;
-  margin: 0 auto;
-  overflow-x: scroll;
-  scroll-snap-align: x mandatory;
-}
-.skills-data {
-  background-color: #ebe7e3;
-  width: 15em;
-  height: 21em;
-  max-width: 90%;
-  max-height: 90%;
-  color: #222121;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  align-items: center;
-  border-radius: 1.5em;
-  transition: 0.3s ease-in;
-  box-shadow: 0 0 10px -5px #222121;
-
-  .skill-name {
-    margin: 20px 0;
-    max-width: 85%;
-  }
-}
-
-.data-container {
-  display: flex;
-  gap: 1em;
-  padding: 25px 0px;
 }

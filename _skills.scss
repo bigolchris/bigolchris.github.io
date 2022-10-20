@@ -1,0 +1,78 @@
+@import "./variables";
+
+:root {
+  --marquee-width: 80vw;
+  --marquee-height: 20vh;
+  // --marquee-elements: 12;
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
+}
+
+.skills-container {
+  row-gap: 2rem;
+  text-align: center;
+
+  // max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+  //   scroll-snap-align: x mandatory;
+  //   animation: scrolling 1s linear infinite;
+}
+.skills-data {
+  background-color: #ebe7e3;
+  width: 15em;
+  height: 21em;
+  max-width: 100%;
+  max-height: 100%;
+  color: #222121;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 1.5em;
+  transition: 0.3s ease-in;
+  box-shadow: 0 0 10px -5px #222121;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  // width: 80vw;
+  // height: 20vh;
+  // animation: scrolling 5s linear infinite;
+
+  .skill-name {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * 4rem * 19));
+  }
+}
+
+.data-container {
+  display: flex;
+  gap: 1em;
+  padding: 25px 0px;
+  width: 80vw;
+  height: 20vh;
+  animation: scrolling 5s linear infinite;
+
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  // flex-shrink: 0;
+  white-space: nowrap;
+}
+.data-container:hover {
+  animation-play-state: paused;
+}

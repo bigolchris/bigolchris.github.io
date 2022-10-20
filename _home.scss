@@ -1,0 +1,40 @@
+@import "./variables";
+
+.home {
+  position: relative;
+  row-gap: 5rem;
+  padding: 4rem 0 5rem;
+}
+.home-title {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.name-color {
+  color: $button-color;
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  border-radius: 0.5rem;
+  background-color: $button-color;
+  transition: 0.3s;
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  color: $button-color;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
