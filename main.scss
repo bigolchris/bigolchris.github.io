@@ -31,6 +31,12 @@ body {
   margin-right: 1rem;
 }
 
+@media (max-width: 868px) {
+  .skills-data {
+    width: 25vw;
+  }
+}
+
 @media (min-width: 992px) {
   .bd-grid {
     margin-left: auto;
