@@ -1,14 +1,23 @@
 @import "./variables";
 
 :root {
-  --marquee-width: 80vw;
-  --marquee-height: 20vh;
+  // --marquee-width: 80vw;
+  // --marquee-height: 20vh;
   // --marquee-elements: 12;
-  --marquee-elements-displayed: 5;
-  --marquee-element-width: calc(
-    var(--marquee-width) / var(--marquee-elements-displayed)
-  );
-  --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
+  --marquee-elements-displayed: 7;
+  // --marquee-element-width: calc(
+  //   var(--marquee-width) / var(--marquee-elements-displayed)
+  // );
+  // --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
+}
+
+.animation-container {
+  animation: scrolling 8s linear infinite;
+  // max-height: 20vh;
+  display: flex;
+  gap: 1em;
+
+  // overflow: hidden;
 }
 
 .skills-container {
@@ -20,21 +29,19 @@
   margin: 0 auto;
   overflow: hidden;
   //   scroll-snap-align: x mandatory;
-  //   animation: scrolling 1s linear infinite;
+  // animation: scrolling 3.5s linear infinite;
 }
 .skills-data {
   background-color: #ebe7e3;
-  width: 15em;
-  height: 21em;
-  max-width: 100%;
-  max-height: 100%;
+  min-height: 15vh;
+  width: 10vw;
   color: #222121;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   align-items: center;
   border-radius: 1.5em;
-  transition: 0.3s ease-in;
+
   box-shadow: 0 0 10px -5px #222121;
   display: flex;
   justify-content: center;
@@ -52,27 +59,23 @@
 
 @keyframes scrolling {
   0% {
-    transform: translateX(0);
+    transform: translateX(0.1%);
   }
   100% {
-    transform: translateX(calc(-1 * 4rem * 19));
+    transform: translateX(-50%);
   }
 }
 
 .data-container {
   display: flex;
   gap: 1em;
-  padding: 25px 0px;
-  width: 80vw;
+  // padding: 25px 0px;
   height: 20vh;
-  animation: scrolling 5s linear infinite;
+  // animation: scrolling 5s linear infinite;
 
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
-  // flex-shrink: 0;
-  white-space: nowrap;
 }
-.data-container:hover {
+.animation-container:hover {
   animation-play-state: paused;
 }
