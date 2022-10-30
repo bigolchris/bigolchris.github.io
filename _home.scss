@@ -12,6 +12,12 @@
   margin-top: 5rem;
 }
 
+.home-social {
+  position: absolute;
+  left: -3em;
+  top: 9.7em;
+}
+
 .name-color {
   color: $button-color;
 }
@@ -23,6 +29,10 @@
   border-radius: 0.5rem;
   background-color: $button-color;
   transition: 0.3s;
+}
+
+.button-linked {
+  display: flex;
 }
 
 .section {
