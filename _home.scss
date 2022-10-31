@@ -49,6 +49,20 @@
   text-align: center;
 }
 
+.border-bottom {
+  // height: 2em;
+  margin-top: -2.6em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5.5em;
+  border-bottom: 3px solid $button-color;
+}
+
+.project {
+  align-items: center;
+}
+
 .svg-icon {
   filter: brightness(0) invert(1);
   height: 1.2rem;
