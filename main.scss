@@ -35,6 +35,14 @@ body {
   .skills-data {
     width: 25vw;
   }
+  .border-bottom {
+    margin-top: -1.9em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5.5em;
+    border-bottom: 3px solid $button-color;
+  }
 }
 
 @media (min-width: 992px) {
