@@ -48,3 +48,12 @@
   margin-bottom: 2rem;
   text-align: center;
 }
+
+.svg-icon {
+  filter: brightness(0) invert(1);
+  height: 1.2rem;
+  width: 1.5rem;
+  position: absolute;
+  padding-left: 0.5em;
+  padding-top: -0.5em;
+}

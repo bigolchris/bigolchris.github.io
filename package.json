@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@iconify/icons-uil": "^1.2.2",
     "vite": "^3.1.0"
   },
   "dependencies": {
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "uil": "^4.2.7"
   }
 }
