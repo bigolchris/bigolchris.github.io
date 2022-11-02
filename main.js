@@ -20,6 +20,7 @@
 
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav-menu");
+const navLink = document.querySelector(".nav-link");
 
 navToggle.addEventListener("click", () => {
   document.body.classList.toggle("nav-open");
@@ -34,6 +35,24 @@ navToggle.addEventListener("click", () => {
     nav.classList.add("hide");
   }
 });
+
+document.querySelectorAll(".nav-link").forEach((link) =>
+  link.addEventListener("click", () => {
+    if (document.body.classList.contains("nav-open")) {
+      nav.classList.remove("show");
+      document.body.classList.remove("nav-open");
+      nav.classList.add("hide");
+    }
+  })
+);
+
+// navLink.addEventListener("click", () => {
+//   if (document.body.classList.contains("nav-open")) {
+//     nav.classList.remove("show");
+//     document.body.classList.remove("nav-open");
+//     nav.classList.add("hide");
+//   }
+// });
 // navToggle.addEventListener("click", () => {
 //   if (nav.classList.contains("show")) {
 //     nav.classList.remove("show");
