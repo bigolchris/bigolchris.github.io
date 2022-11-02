@@ -63,18 +63,9 @@ body {
     color: #fff;
   }
 
-  // .home-social {
-  //   border: 1px solid black;
-
-  //   display: flex;
-  //   left: 0;
-  //   width: 50vw;
-  //   // height: 51vh;
-  //   align-items: flex-end;
-  //   // justify-content: space-around;
-  //   // left: 8em;
-  //   // top: 13em;
-  // }
+  .home-social {
+    display: none;
+  }
 }
 
 @media (max-width: 868px) {
